@@ -64,6 +64,8 @@ let data1 = {
 
 data1.salary = 744555; 
 console.log(data1); 
+data1.address = "bipard patna"; 
+console.log(data1); 
 
 
 // deleting data from an object using delete keyword 
@@ -135,6 +137,21 @@ let emp3 = {
 const newObject = Object.assign({},emp,{role:"developer"}); 
 console.log(newObject); 
 
+
+
+let data2 = {
+    id: 101,
+    name: "sumit",
+    salary: 800000
+}; 
+
+data1.salary = 744555; 
+console.log(data2); 
+
+// you can't declare key-value pair in this way if you have to declare you have to use the property 
+// like object.assign(); 
+data1.address = "bipard patna"; 
+console.log(data2); 
 
 
 
