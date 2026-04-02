@@ -65,15 +65,6 @@ console.log(faculty);
 
 
 
-
-
-
-
-
-
-
-
-
 // object.freeze 
 var emp1 = {
     name:"rahul", 
