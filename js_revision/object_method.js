@@ -72,6 +72,7 @@ var emp1 = {
     branch: "electronics"
 }
 
+
 Object.freeze(emp1); 
 console.log(emp1); 
 console.log(Object.isFrozen(emp1)); 
