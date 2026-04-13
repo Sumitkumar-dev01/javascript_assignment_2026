@@ -7,14 +7,14 @@ function groupEventsByCity(events) {
 
     // Your Code here
     return events.reduce((acc,event)=>{
-        // if the city doesn't exist in the accumulator , initialize it as an empty array 
-        if(!acc[event.city]){
-            acc[event.city] = []
-        }
-        // add the event name to the corresponding city group 
-        acc[event.city].push(event.name); 
-        return acc; 
-        },{})
+      if(!acc[event.city]){
+        acc[event.city] = [];
+      }
+      // add the event name to the corresponding city group 
+      acc[event.city].push(event.name); 
+      return acc;
+    },{})
+  
 }
 
 // Example usage:
