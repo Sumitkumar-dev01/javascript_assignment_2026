@@ -6,8 +6,6 @@ Suppose that you are developing an event management application. Given an array 
 
  */
 
-
-
 function findEventsInRange(events, latRange, lngRange) {
      
   // Your code here

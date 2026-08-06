@@ -2,13 +2,7 @@
  * You are building an event management application. Create a map that shows all the events happening in a city on a particular date, displaying them with markers and event details.
  */
 
-
-
-
-
 function filterEventsByDate(events, eventDate) {
-  
-  //Your code here
   return events.filter(event => event.date === eventDate); 
 }
 

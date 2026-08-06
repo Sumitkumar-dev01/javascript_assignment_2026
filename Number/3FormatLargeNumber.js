@@ -17,3 +17,27 @@ function formatLargeNumber(number) {
 console.log(formatLargeNumber(1500));  // output: "1.5k"
 console.log(formatLargeNumber(3500000)); // output: "3.5M"
 console.log(formatLargeNumber(950)); // output: "950"
+
+
+
+// tofixed -> for one decimal. 
+
+
+
+function formatLargeNumber1(number){
+    if(number>1000000){
+        return (number/1000000).toFixed(1) + "M"
+    }
+    else if(number>1000){
+        return (number/1000).toFixed(1) + "k"
+
+    }
+    else{
+        return number.toString(); 
+    }
+}
+
+
+console.log(formatLargeNumber1(1500));  // output: "1.5k"
+console.log(formatLargeNumber1(3500000)); // output: "3.5M"
+console.log(formatLargeNumber1(950)); // output: "950"

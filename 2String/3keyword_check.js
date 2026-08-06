@@ -36,3 +36,18 @@ let query = "red shoes";
 let productDescription = "These are red shoes with comfortable padding.";
 
 isProductMatch(query, productDescription);
+
+
+
+
+
+function isProductMatch1(query,description){
+if(productDescription.toLocaleLowerCase().includes(query1.toLocaleLowerCase())){
+  console.log("query matches the product description")
+}
+}
+
+let query1 = "red shoes";
+let productDescription1 = "These are red shoes with comfortable padding.";
+
+isProductMatch1(query1, productDescription1);
