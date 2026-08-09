@@ -1,9 +1,9 @@
 /**
  * 
  * Question 1: Find Events Within a Latitude and Longitude Range
-Suppose that you are developing an event management application. Given an array of event data with latitude and longitude coordinates, find all events that are within a specified range of latitude and longitude.
-
-
+Suppose that you are developing an event management application. 
+Given an array of event data with latitude and longitude coordinates, 
+find all events that are within a specified range of latitude and longitude.
  */
 
 function findEventsInRange(events, latRange, lngRange) {

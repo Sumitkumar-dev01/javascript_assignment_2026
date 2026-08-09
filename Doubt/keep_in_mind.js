@@ -61,3 +61,10 @@ Object.defineProperties(data,{
 for(const key in data){
     console.log(`${key}: ${data[key]}`); 
 }
+
+
+const hello  = (req,res)=>{
+    console.log(`${req}`); 
+    console.log(`${res}`)
+}
+hello(5,8)
