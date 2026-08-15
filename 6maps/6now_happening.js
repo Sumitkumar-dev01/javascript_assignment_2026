@@ -15,12 +15,16 @@ const events = [
 
 // Function to find events happening today
 function findEventsHappeningToday(events) {
-
+    const today = new Date().toISOString().split("T")[0]; 
       // Your code here
-
+     return events.filter((event) => event.date == today)
 }
 
 // Call the function and log the result
 const todayEvents = findEventsHappeningToday(events);
 console.log("Events happening today:", todayEvents);
 
+
+
+
+// whenever you have to search then you can use filter. 

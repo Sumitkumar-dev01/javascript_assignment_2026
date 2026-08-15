@@ -7,6 +7,13 @@ Write a program to count the number of events happening on a specific date.
 function countEventsByDate(events, eventDate) {
   
     // Your code here
+    let count = 0; 
+    events.map((event)=> {
+      if(event.date == eventDate){
+        count++; 
+      }
+    })
+    return count;
 
 }
 
