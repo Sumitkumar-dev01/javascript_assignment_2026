@@ -24,4 +24,6 @@ const suggestions = getSuggestions(products, query);
 console.log(suggestions); // Output: ["Shirt", "Shoes"]
 
 
-  
+// whenever you have to search then u can use filter and 
+// whenever we have to iterate then u can use foreach and map method. 
+
