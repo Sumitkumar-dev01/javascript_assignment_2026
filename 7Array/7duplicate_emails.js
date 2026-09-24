@@ -7,6 +7,8 @@ Write a function removeDuplicates that takes an array of emails and removes dupl
 
 function removeDuplicates(emails) {
   //Your code here
+  return Array.from(new Set(emails))
+ 
 }
 
 // Example Usage:
@@ -24,3 +26,6 @@ console.log(uniqueEmails);
 // Output: ["user1@mail.com", "user2@mail.com", "user3@mail.com"]
 
   
+
+
+// when it comes to find duplicate just use set. 

@@ -1,12 +1,30 @@
 /**
- * Description:Write a program in javascript where define function createShoppingCart where define an shoppingCart object with array of object which contain different item as a object with properties like name, price, quantity.Write a function addItem to add new items (with name, price, and quantity) to the cart.The program contain function calculateTotal which calculates the total price based on the quantity and price of the items in the cart.Once you add an item to the cart, it automatically recalculates the total.
+ * Description:Write a program in javascript where 
+ * define function 
+ * createShoppingCart where define an 
+ * shoppingCart object with array of object 
+ * which contain different item as a object 
+ * with properties like name, price, quantity.
+ * Write a function addItem to add new items 
+ * (with name, price, and quantity) to the cart.
+ * The program contain function calculateTotal 
+ * which calculates the total price based on the
+ *  quantity and price of the items in the cart.
+ * Once you add an item to the cart, it 
+ * automatically recalculates the total.
  */
 
 
 
 // Function to create a shopping cart object
 function createShoppingCart() {
-   //code here
+   shoppingCart:{
+   item:[
+    {name:"t-shirt",price:25,quanrity:2},
+    {name:"trouser",price:25,quanrity:2},
+    {name:"shirt",price:25,quanrity:2},
+   ]
+   }
 }
 
 // Function to add a new item

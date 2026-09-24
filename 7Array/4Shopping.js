@@ -1,12 +1,18 @@
 /**
  * Question 4: Shopping Cart Total
-Write a function calculateCartTotal that takes an array of cart items and returns the total price.
+Write a function calculateCartTotal
+ that takes an array of cart items and returns 
+ the total price.
  */
 
 
 
 function calculateCartTotal(cart) {
  //Your code here
+ return cart.reduce((total,item)=>{
+  return total + item.price*item.quantity
+ },0)
+
 }
 
 // Example Usage:
@@ -21,3 +27,4 @@ const total = calculateCartTotal(cart);
 console.log(total); // Output: 950
 
   
+// remember syntax of reduce 

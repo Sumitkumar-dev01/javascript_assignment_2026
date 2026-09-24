@@ -1,6 +1,7 @@
 /**
  *  Question 5: Tag Frequency
-Write a function countTags that takes an array of tags and counts how many times each tag appears.
+Write a function countTags that takes an array of 
+tags and counts how many times each tag appears.
  */
 
 
@@ -8,6 +9,17 @@ Write a function countTags that takes an array of tags and counts how many times
 
 function countTags(tags) {
  //Your code
+ const tagcount = {}; 
+ tags.forEach(tag => {
+    if(tagcount[tag]){
+        // tagcount.tag++; 
+        tagcount[tag]++;
+    }else{
+        // tagcount.tag = 1
+        tagcount[tag] = 1
+    }
+ });
+ return tagcount;
 }
 
 // Example Usage:

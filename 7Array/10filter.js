@@ -1,12 +1,20 @@
 /**
  * Question 10: Filtering Products by Price
-Write a function filterByPrice that filters an array of products within a given price range.
+Write a function filterByPrice that filters 
+an array of products within a given price range.
  */
 
 
 
 function filterByPrice(products, minPrice, maxPrice) {
   //Your code here
+  
+  // return products.filter((product)=>{
+  //   product.price>=minPrice && product.price<=maxPrice
+  // })
+
+    return products.filter(product => product.price >= minPrice && product.price <= maxPrice);
+
 }
 
 // Example Usage:

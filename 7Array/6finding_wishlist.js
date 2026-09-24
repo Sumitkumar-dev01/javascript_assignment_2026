@@ -1,12 +1,15 @@
 /**
  *  Question 6: Finding Common Wishlist Items
-Write a function getCommonItems that takes two arrays of wishlist items and returns the common items.
+Write a function getCommonItems that
+ takes two arrays of wishlist items and 
+ returns the common items.
  */
 
 
 
 function getCommonItems(wishlist1, wishlist2) {
   //Your code here
+  return wishlist1.filter(item => wishlist2.includes(item));
 }
 
 // Example Usage:

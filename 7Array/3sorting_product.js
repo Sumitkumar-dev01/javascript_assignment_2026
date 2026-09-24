@@ -1,12 +1,20 @@
 /**
  * Question 3: Sorting Products
-Write a function sortProducts that sorts an array of product objects either by name (alphabetically) or price (ascending or descending).
+Write a function sortProducts that sorts an array of
+ product objects either by name (alphabetically) or price (ascending or descending).
  */
 
 
 
 function sortProducts(products, sortBy, order = "asc") {
   //Your code here 
+  return products.sort((a,b)=>{
+    if(sortBy === "name"){
+      // compare name alphabetically
+      if(a.name.toLowerCase() < b.name.toLowerCase()) return order === "asc"?-1:1;
+      if(b.name.toLowerCase()>b.name.toLowerCase()) return order === "aasc"?a.price-b.price:b.price-a.price
+    }
+  })
 }
 
 // Example Usage:
@@ -27,3 +35,11 @@ console.log(sortProducts(products, "price", "desc"));
 
 
   
+
+
+
+
+
+
+
+// once again i have to solve.

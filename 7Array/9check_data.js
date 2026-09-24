@@ -1,11 +1,18 @@
 /**
  *  Question 9: Chunking User Data
-Write a function chunkData that takes an array of user data and splits it into smaller chunks.
+Write a function chunkData that takes an array
+  of user data and splits it into smaller chunks.
  */
 
 
 function chunkData(data, chunkSize) {
   //Your code here
+   const result = []; 
+   for(let i = 0; i<data.length;i+=chunkSize){
+    result.push(data.slice(i,i+chunkSize)); 
+   }
+   return result;
+
 }
 
 // Example Usage:
