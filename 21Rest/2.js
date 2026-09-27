@@ -3,6 +3,9 @@
 
 function filterEvens(...numbers) {
   //Your code here
+  return numbers.filter(num=>
+    num%2 == 0
+  )
 }
 
 // Example

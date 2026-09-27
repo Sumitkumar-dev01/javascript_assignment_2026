@@ -1,8 +1,17 @@
-// Write a function checkStock that checks if an item is in stock based on a product’s inventory object. If stock is low, return a warning message.
+// Write a function checkStock that checks 
+// if an item is in stock based on a product’s 
+// inventory object. If stock is low, return a
+//  warning message.
 
 
 function checkStock(inventory, item) {
   //Your code here
+  if(inventory.apples == 0  && inventory.bananas == 0){
+    return "out of stock"; 
+  }
+  else{
+   return "in stock"
+  }
 }
 
 // Function call example

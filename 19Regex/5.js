@@ -3,6 +3,10 @@
 
 function isValidIP(ip) {
   //Your code here
+  // regex -> regular expression 
+  const ipv4Regex = /^(25[0-5]|2[0-4]d|1d{2}|d{1,2})(.(?!$)){3}(25[0-5]|2[0-4]d|1d{2}|d{1,2})$/;
+  return ipv4Regex.test(ip)
+
 }
 
 // Example usage:

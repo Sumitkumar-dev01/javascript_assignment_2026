@@ -3,6 +3,10 @@
 
 function obfuscateEmail(email) {
  //Your code here
+
+ const[local,domain] = email.split("@"); 
+ const newEmail = local[0]+"******"+domain;
+ return newEmail; 
 }
 
 // Function call example

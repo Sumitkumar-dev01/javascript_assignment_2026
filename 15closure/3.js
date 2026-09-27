@@ -3,7 +3,14 @@
 
 function createDropdownManager() {
   //Your code here
-}
+  let isOpen = false;
+  return{
+     toogle:()=> isOpen = !isOpen,
+     getState:()=> isOpen
+    }
+  }
+
+
 
 // Usage
 const dropdown = createDropdownManager();

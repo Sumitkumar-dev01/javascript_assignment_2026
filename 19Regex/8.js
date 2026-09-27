@@ -3,6 +3,8 @@
 
 function getDomain(url) {
  //Your code here
+ const urlObj = new URL(url); 
+ return urlObj.hostname; 
 }
 
 // Example usage:

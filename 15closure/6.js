@@ -3,6 +3,11 @@
 
 function createNotificationManager() {
  //Your code here
+ const notification = []; 
+ return{
+    add:(message)=>notification.push(message),
+    getNotifications:() => notification
+ }
 }
 
 // Usage

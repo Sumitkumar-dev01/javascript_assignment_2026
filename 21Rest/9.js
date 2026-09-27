@@ -3,6 +3,11 @@
 
 function cloneObject(obj, ...keys) {
  //Your code here
+ return keys.reduce((clone,key)=>{
+    if(key in obj)
+        clone[key] = obj[key]; 
+    return clone;
+ },{})
 }
 
 // Example

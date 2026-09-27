@@ -3,6 +3,7 @@
 
 function extractItems(arr, ...indicesToExclude) {
   //Your code here
+  return arr.filter((_,index)=>!indicesToExclude.includes(index))
 }
 
 // Example

@@ -3,6 +3,7 @@
 
 function excludeKeys(obj, ...keysToExclude) {
  //Your code here
+ return {...obj}
 }
 
 // Example

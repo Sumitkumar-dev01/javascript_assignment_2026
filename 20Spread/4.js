@@ -1,9 +1,13 @@
-// Write a program to combine the properties of two objects into one using the spread operator. Ensure the second object’s properties overwrite those of the first object if there are conflicts.
+// Write a program to combine the properties 
+// of two objects into one using the spread operator. Ensure the second object’s properties overwrite those of the first object if there are conflicts.
 
 
 function combineObjects(obj1, obj2) {
   
     // Your code here
+    let combined = {...obj1,...obj2}; 
+    return combined; 
+
 
 }
 

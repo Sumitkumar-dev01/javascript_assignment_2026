@@ -1,8 +1,22 @@
-// Write a function createPermissionManager to manage permissions dynamically based on the user role 
+// Write a function createPermissionManager to 
+// manage permissions dynamically based on the 
+// user role 
 
 
 function createPermissionManager() {
+  const Permissions = {
+    admin:["create","edit","delete","view"],
+    editor:["edit","view"],
+    viewer:["view"]
+  }
   //Your code here
+  return{
+    hasPermission:(role,action)=>{
+      Permissions[role]?.includes(action)|| false
+    },
+
+  }
+
 }
 
 // Usage

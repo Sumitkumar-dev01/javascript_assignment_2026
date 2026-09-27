@@ -2,6 +2,13 @@
 
 
 const filterOdds = (arr) => {
+  let new_arr = []; 
+  arr.filter((item)=>{
+    if(item%2!=0){
+      new_arr.push(item)
+    }
+  } )
+  return new_arr
 
   // Your Code here
   

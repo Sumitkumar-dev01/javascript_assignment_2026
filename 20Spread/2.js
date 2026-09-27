@@ -4,6 +4,8 @@
 function cloneObject(obj) {
   
     // Your code here
+    let clonedObject = {...obj}; 
+    return clonedObject; 
 
 }
 

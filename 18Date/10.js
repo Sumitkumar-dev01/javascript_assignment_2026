@@ -3,6 +3,9 @@
 
 function getDaysDifference(startDate, endDate) {
  //code here
+ let timeDifference = endDate - startDate; 
+ let daysDifference = timeDifference/(1000*3600*24)
+ return daysDifference; 
 }
 
 // Example usage:

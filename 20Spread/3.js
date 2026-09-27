@@ -4,6 +4,12 @@
 function addElements(arr, start, end) {
   
   // Write your code here
+  // first we have to clone the array 
+  let cloned_array = [...arr]; 
+  // now insert element in the begining and end 
+  // of an array. 
+  let new_array = [start,...cloned_array,end]; 
+  return new_array; 
 
 }
 

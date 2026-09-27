@@ -2,6 +2,11 @@
 
 
  function multiply(a) {
+    return function(b){
+        return function multiply(c){
+            return a*b*c
+        }
+    }
        
     // Write your code here
 

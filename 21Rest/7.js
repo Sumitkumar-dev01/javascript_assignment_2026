@@ -3,6 +3,7 @@
 
 function combineData(baseArray, ...arrays) {
  //Your code here
+ return [...baseArray,...arrays.flat()]; 
 }
 
 // Example

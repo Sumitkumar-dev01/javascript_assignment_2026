@@ -3,6 +3,8 @@
 
 function findHTMLTags(htmlString) {
  //Your code here
+ const tagRegex = /</?[^>]+>/g;
+ return htmlString.match(tagRegex) || []; 
 }
 
 // Example usage:

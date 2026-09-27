@@ -4,6 +4,9 @@
 
 function isValidEmail(email) {
   // Your code here
+  const emailRegex = /^[^s@]+@[^s@]+.[^s@]+$/; 
+  return emailRegex.test(email); 
+
 }
 
 // Example usage:

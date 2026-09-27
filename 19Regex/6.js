@@ -3,6 +3,8 @@
 
 function findHashtags(text) {
   // Your code here
+  const hashtagsRegex = /#w+/g; 
+  return text.match(hashtagsRegex) || []; 
 }
 
 // Example usage:

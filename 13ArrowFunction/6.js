@@ -4,6 +4,7 @@
 const enumerateMap = (map) => {
   
   // Your Code here
+  map.forEach((value, key) => console.log("Key: " + key + ", Value: " + value));
 
 };
 

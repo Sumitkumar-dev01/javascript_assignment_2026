@@ -3,6 +3,7 @@
 
 function buildProduct(name, ...features) {
   //Your code here
+  return {name,features}
 }
 
 // Example

@@ -3,6 +3,9 @@
 
 function findPhoneNumbers(text) {
   //Your code 
+   const phoneRegex = /(?d{3})?[- ]?d{3}[- ]?d{4}/g;
+   return text.match(phoneRegex) || []
+
 }
 
 // Example usage:

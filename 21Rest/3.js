@@ -1,8 +1,12 @@
-// Write a function groupByClass that takes a teacher's name and an arbitrary number of student names and returns an object grouping them.
+// Write a function groupByClass that takes a 
+// teacher's name and an arbitrary number of 
+// student names and returns an object grouping 
+// them.
 
 
 function groupByClass(teacher, ...students) {
  //Your code here
+ return {teacher, ...students}
 }
 
 // Example

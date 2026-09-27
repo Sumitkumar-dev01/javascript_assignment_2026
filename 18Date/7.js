@@ -1,8 +1,14 @@
-// Description:Write a javascript program where manipulate the current date by subtracting some date and return the updated date from it. 
+// Description:Write a javascript program where 
+// manipulate the current date by subtracting 
+// some date and return the updated date from it. 
 
 
 function subtractDaysFromCurrentDate(daysToSubtract) {
 //code here
+// get the local date 
+let currentDate = new Date();
+currentDate.setDate(currentDate.getDate()-daysToSubtract) 
+return currentDate;
 }
 
 // Example usage:

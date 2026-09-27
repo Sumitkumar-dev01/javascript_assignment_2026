@@ -4,6 +4,8 @@
 
 function getQueryParameter(url, parameter) {
   //Your code here
+  const urlObj = new URL(url); 
+  return urlObj.searchParams.get(parameter)
 }
 
 // Example usage:

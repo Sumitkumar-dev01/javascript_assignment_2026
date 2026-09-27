@@ -3,6 +3,12 @@
 
 function groupByType(...args) {
  //Your code here
+ return args.reduce((grouped,arg)=>{
+    const type = typeof arg; 
+    if(!grouped[type]) grouped[type] = []; 
+    grouped[type].push(arg); 
+    return grouped;
+ },{})
 }
 
 // Example

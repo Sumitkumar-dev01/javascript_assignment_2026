@@ -1,8 +1,19 @@
-// Write a function createSessionManager that manages user sessions on a website. The session manager should allow a user to log in, log out, and retrieve the current session data.
+// Write a function createSessionManager
+//  that manages user sessions on a website. 
+// The session manager should allow a user to 
+// log in, log out, and retrieve the current
+//  session data.
 
 
 function createSessionManager() {
   //Your code here
+  let session = null;
+  return{
+    login:(user)=> session = user,
+    logout:() => session = null,
+    getSession: () => session 
+  }
+
 }
 
 // Usage

@@ -1,8 +1,21 @@
-// Description:Write a javascript program where create a two variable date1 date2 and took a two date and then compare it on the basis of comparison print that date1 is earlier to date2 of later to date2 or same to date2
+// Description:Write a javascript program where 
+// create a two variable date1 date2 and took a 
+// two date and then compare it on the basis of 
+// comparison print that date1 is earlier to 
+// date2 of later to date2 or same to date2
 
 
 function compareDates(date1, date2) {
 //code here
+if(date1<date2){
+    console.log('date is earlier than date2')
+}
+else if(date1>date2){
+    console.log('date1 is later than date 2')
+}
+else{
+    console.log("both dates are the same")
+}
 }
 
 // Example usage:

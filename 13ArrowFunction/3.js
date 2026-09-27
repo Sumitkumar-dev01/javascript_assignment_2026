@@ -4,6 +4,12 @@
 const isEven = (n) =>{
   
     // Your Code here
+    if(n%2 == 0){
+      return "even number"
+    }
+    else{
+      return "odd number"
+    }
   
   } 
 console.log(isEven(7)); // Output: false

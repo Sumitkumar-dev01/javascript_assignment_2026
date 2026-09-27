@@ -1,10 +1,24 @@
-// Write a JavaScript function that shows the menu structure which contain title and url.The menu should display:Top-level items like "Home," "About," "Contact," etc.Nested submenus under categories like "Services," where each category can have its own submenus (e.g., "Web Development," "App Development").
+// Write a JavaScript function that shows the 
+// menu structure which contain title and url.
+// The menu should display:Top-level items like 
+// "Home," "About," "Contact," etc.Nested
+//  submenus under categories like "Services," 
+// where each category can have its own submenus 
+// (e.g., "Web Development," "App Development").
 
 
 // Function to generate the menu
 function generateMenu(menu) {
   
   // Your code here
+  menu.forEach(item => {
+    console.log("Title:" + item.title + "URL:"+ item.url); 
+    if(item.submenu){
+      generateMenu(item.submenu)
+    }
+    
+  });
+
 
   
 }

@@ -4,6 +4,7 @@
 function power(base, exponent) {
  
   // Your code here
+  return Math.pow(base,exponent)
 
 }
 

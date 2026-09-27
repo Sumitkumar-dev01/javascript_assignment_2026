@@ -3,6 +3,9 @@
 
 
  function subtract(a) {
+    return function(b){
+        return a-b;
+    }
 
     // Your code here
 

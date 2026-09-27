@@ -3,6 +3,8 @@
 
 function findHexColors(text) {
  //Your code here
+   const hexRegex = /#([a-fA-F0-9]{3}|[a-fA-F0-9]{6})\b/g;
+  return text.match(hexRegex) || []; 
 }
 
 // Example usage:

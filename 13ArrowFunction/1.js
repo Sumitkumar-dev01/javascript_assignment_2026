@@ -2,8 +2,6 @@
 
 
 const add = (a, b) => {
-
-  // Your code here
-
+  return a+b;
   };
 console.log(add(5, 3)); // Output: 8

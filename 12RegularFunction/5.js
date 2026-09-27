@@ -3,6 +3,11 @@
 
 function detectFraud(transactions, thresholdAmount) {
  //Your code here
+ const timeframe = 3600 * 1000; 
+ const currentTime = Date.now(); 
+
+ const suspiciousTransactions = transactions.filter((txn)=> txn.amount>thresholdAmount && currentTime-txn.timestamp<= timeframe); 
+ return suspiciousTransactions.length>1; 
 }
 
 // Function call example

@@ -1,8 +1,13 @@
-// Create a function limitApiRequests that limits how many API requests a user can make in a given timeframe (e.g., 100 requests per hour).
+// Create a function limitApiRequests that
+//  limits how many API requests a user can make
+//  in a given timeframe (e.g., 100 requests per hour).
 
 
 function limitApiRequests(userId, timestamp) {
   //Your code here
+  let count = 100; 
+  
+
 }
 
 // Function call example

@@ -3,6 +3,9 @@
 
 function getCurrentTimestamp() {
   //code here
+  let currentDate = new Date(); 
+  let timestamp = currentDate.getTime(); 
+  return timestamp;
 }
 
 // Example usage:

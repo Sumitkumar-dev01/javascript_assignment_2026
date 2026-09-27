@@ -1,8 +1,12 @@
-// Write a function sumNumbers that takes any number of arguments and returns the sum of all the numbers.
+// Write a function sumNumbers that 
+// takes any number of arguments and 
+// returns the sum of all the numbers.
 
 
 function sumNumbers(...numbers) {
   //Your code here
+  return numbers.reduce((sum,num)=>sum+num,0)
+  
 }
 
 // Example

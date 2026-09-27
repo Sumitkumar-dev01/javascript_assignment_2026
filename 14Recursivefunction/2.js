@@ -1,12 +1,21 @@
-// Write a program in javascript where create and array of comments where each comments have id, text and reply and reply recursively contains many reply.
+// Write a program in javascript where 
+// create and array of comments where each 
+// comments have id, text and reply and reply 
+// recursively contains many reply.
 
 
 
-// Function to display comments and their nested replies
+// Function to display comments and their
+//  nested replies
 function displayComments(comments) {
   
     // Your code here
-
+    comments.forEach(item => {
+      console.log(item.id,item.text)
+      if(item.replies){
+        displayComments(item.replies)
+      } 
+    });
 }
 
 // Simplified comments array

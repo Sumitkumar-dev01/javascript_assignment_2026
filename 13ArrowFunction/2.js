@@ -4,6 +4,7 @@
 const square = (a) => {
 
   // Your code here
+  return a*a;
 
   };
 console.log(square(5)); // Output: 25
