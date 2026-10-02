@@ -1,0 +1,30 @@
+<!-- Question 7: Copy to Clipboard
+Write a function copyToClipboard that copies the text content of an element with a specific ID to the clipboard when a button is clicked. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy to Clipboard</title>
+</head>
+<body>
+  <p id="textToCopy">This text will be copied!</p>
+  <button id="copyButton">Copy</button>
+
+  <script>
+    function copyToClipboard(elementId) {
+      //Your code here
+    }
+
+    document.getElementById('copyButton').addEventListener('click', () => {
+      copyToClipboard('textToCopy');
+    });
+  </script>
+</body>
+</html>
+
+
+  

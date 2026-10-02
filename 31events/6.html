@@ -1,0 +1,37 @@
+<!-- Question 6: Scroll Event - Show Scroll Progress
+Create a program that shows the user's scroll progress as a percentage on the page -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Progress Bar</title>
+</head>
+<body>
+
+  <!-- Content to make the page scrollable -->
+  <div style="height: 2000px;">
+    <p>Scroll down the page</p>
+  </div>
+
+  <!-- Progress bar at the top -->
+  <div id="progressBar" style="width: 0%; height: 20px; background-color: green;"></div>
+
+  <script>
+   //Your code here
+   window.addEventListener('scroll',function(){
+    const scrollPosition = window.scrollY;
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress  = (scrollPosition/totalHeight)*100;
+    document.getElementById('progressBar').style.width = progress+'%'
+   })
+  </script>
+
+</body>
+</html>
+
+  

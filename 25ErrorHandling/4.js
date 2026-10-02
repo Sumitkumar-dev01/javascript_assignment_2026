@@ -3,6 +3,17 @@
 
 function updateElementText(selector, text) {
  //Your code here
+ try{
+    const element = document.querySelector(selector); 
+    if(!element){
+        throw new Error("element not found"); 
+    }
+    element.textContent = text; 
+    return "element updated succesfully"; 
+ }catch(error){
+    return error.message;
+ }
+
 }
 
 // Function call (Make sure there's an element with id 'myDiv' in the HTML)

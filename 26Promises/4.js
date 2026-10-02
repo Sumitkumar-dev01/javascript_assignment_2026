@@ -4,6 +4,18 @@
 
 function trackOrder(orderId) {
   //Your code here
+  const statuses = ["preparing","out for delivery","Delivered"]
+  return new Promise((resolve)=>{
+    let i =0; 
+    const interval = setInterval(()=>{
+      console.log(statuses[i]); 
+      i++; 
+      if(i===statuses.length){
+        clearInterval(interval); 
+        resolve("order completed")
+      }
+    },1000)
+  })
 }
 
 // Example Usage

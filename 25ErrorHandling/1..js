@@ -1,8 +1,19 @@
-// Write a function safeDivide that takes two numbers and returns their division. If the divisor is 0, it should throw an error with the message "Cannot divide by zero".
+// Write a function safeDivide that takes two
+//  numbers and returns their division. If the 
+// divisor is 0, it should throw an error with 
+// the message "Cannot divide by zero".
 
 
 function safeDivide(a, b) {
   //Your code here
+  try{
+    if(b==0){
+       throw new Error("cannot divide by zero")
+    }
+
+  }catch(error){
+    return error.message
+  }
 }
 
 // Function call

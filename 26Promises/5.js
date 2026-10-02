@@ -4,6 +4,11 @@
 
 function bookFlight(ticketDetails) {
   //Your code here
+  return new Promise((resolve)=>{
+    setTimeout(() => {
+      resolve(`Booking confirmed for ${ticketDetails.passenger}`)
+    }, 3000);
+  })
 }
 
 // Example Usage

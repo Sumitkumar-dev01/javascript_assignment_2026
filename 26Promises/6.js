@@ -3,6 +3,17 @@
 
 function simulateFileUpload(fileName, size) {
   //Your code here
+  return new Promise((resolve)=>{
+    let progress = 0; 
+    const interval = setInterval(()=>{
+      progress += Math.ceil(100/size); 
+      console.log(`uploading ${fileName}:${progress}%`)
+      if(progress>=100){
+        clearInterval(interval); 
+        resolve("file uploaded successfully"); 
+      }
+    },1000)
+  })
 }
 
 // Example Usage

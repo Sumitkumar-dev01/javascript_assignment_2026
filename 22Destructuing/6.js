@@ -4,6 +4,9 @@
 function splitArray(arr) {
   
   // Your code here
+  const arr = [1,2,3,4,5]; 
+  const[first,second,...rest] = arr;
+  return{first,second,rest}; 
 
 }
 

@@ -3,6 +3,9 @@
 
 function convertToNumber(str) {
    // Your code here
+   const number = Number(str); 
+   return isNaN(number)?NaN:number;
+
 }
 
 console.log(convertToNumber("123")); // 123

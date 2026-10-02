@@ -4,6 +4,7 @@
 
 function Translator(translations) {
   //Your code here
+  
 }
 
 // Example Usage:

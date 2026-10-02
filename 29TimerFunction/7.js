@@ -6,6 +6,12 @@ let seconds = 0;
 // Initialize the counter
 // Function to increment and display the count of seconds
 function countSeconds() {
+    console.log(seconds); 
+    seconds++;
+    if(seconds>10){
+        clearInterval(interval); 
+        console.log("counting stopped")
+    }
     //Your code here
 }
 // Start counting every 1000ms (1 second)

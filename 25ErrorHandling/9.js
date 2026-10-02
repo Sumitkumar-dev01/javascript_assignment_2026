@@ -3,6 +3,16 @@
 
 function safeLength(str) {
   //Your code here
+  try{
+    if(str == null){
+    throw new Error("cannot get length of null"); 
+  }
+  return str.length;
+
+  }
+  catch(error){
+    return error.message;
+  }
 }
 
 // Function call

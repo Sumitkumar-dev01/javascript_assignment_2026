@@ -1,4 +1,14 @@
-// Description:The Vehicle class will be the base class that holds the common properties of all vehicles (make, model, and year).The Car and Truck classes will inherit from the Vehicle class and extend it by adding their own specific properties (doors for cars, payload capacity for trucks). Both Car and Truck should have their own method to display detailed information about the vehicle, overriding the displayInfo() method from the Vehicle class. 
+// Description:The Vehicle class will be the base 
+// class that holds the common properties of all 
+// vehicles (make, model, and year).The Car and 
+// Truck classes will inherit from the Vehicle 
+// class and extend it by adding their own 
+// specific properties (doors for cars, 
+// payload capacity for trucks). Both Car and 
+// Truck should have their own method to display
+//  detailed information about the vehicle, 
+// overriding the displayInfo() method from the
+//  Vehicle class. 
 
 // Vehicle class (Base class)
 function Vehicle(make, model, year) {
@@ -8,10 +18,15 @@ function Vehicle(make, model, year) {
 }
 Vehicle.prototype.displayInfo = function() {
   ///code here
+  console.log(`vechile:${this.make} ${this.model}(${this.year})`)
+
+
 };
 // Car class (inherits from Vehicle)
 function Car(make, model, year, doors) {
 //code here
+Vehicle.call(this,make,model,year)
+this.doors = doors;
 }
 Car.prototype = Object.create(Vehicle.prototype); // Inherit methods
 Car.prototype.constructor = Car;

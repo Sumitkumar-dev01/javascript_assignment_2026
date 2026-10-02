@@ -2,6 +2,11 @@
 
 if (Notification.permission !== "granted") {
   //code here
+  Notification.requestPermission().then(function(permission){
+    if(permission === "granted"){
+      new Notification("you've got a new message")
+    }
+  })
 } else {
   new Notification("You've got a new message!");
 }

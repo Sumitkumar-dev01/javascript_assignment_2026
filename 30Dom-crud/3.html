@@ -1,0 +1,39 @@
+<!-- Question 3: Edit a Specific List Item
+Write a function editListItem that updates the text of a specific list item at a given index in an unordered list with the given ID. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit List Item</title>
+</head>
+<body>
+  //Your code here
+  <ul id="todoList">
+    <li>Task 1</li>
+    <li>Task 2</li>
+    <li>Task 3</li>
+  </ul>
+  <script>
+    function editListItem(listId, index, newText) {
+     //Your code here
+     const list = document.getElementById(listId); 
+     if(list.children.index){
+      list.children.index.texContent = new text;
+     }else{
+      alert("index out of range")
+     }
+    }
+
+    document.getElementById('editItemButton').addEventListener('click', () => {
+      editListItem('todoList', 1, 'Learn DOM');
+    });
+  </script>
+</body>
+</html>
+
+
+  

@@ -4,8 +4,10 @@
 // Program to show a welcome message after 5 seconds
 // Function to display the welcome message
 function showWelcomeMessage() {
+   console.log("welcome to our website!")
    //Your code here
 }
+setTimeout(showWelcomeMessage, 5000);
 // Delay the welcome message by 5 seconds (5000 milliseconds)
 
   

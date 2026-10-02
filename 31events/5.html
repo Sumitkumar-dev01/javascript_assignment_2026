@@ -1,0 +1,35 @@
+<!-- uestion 5: Change Event - Input Field Validation
+Create a program that checks the validity of an email address entered by the user in an input field. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Validation Example</title>
+</head>
+<body>
+
+  <!-- Input field for email -->
+  <input type="email" id="email" placeholder="Enter your email">
+
+  <script>
+    // Get the email input field by its ID
+    const emailField = document.getElementById('email'); 
+
+   //Your code here
+   emailField.addEventListener('change',function(){
+    const email = emailField.value
+    if(!email.includes('@')){
+      alert('please enter a valid email address'); 
+    }
+   })
+  </script>
+
+</body>
+</html>
+
+
+  

@@ -3,6 +3,32 @@
 
 function calculator(initialValue) {
   //Your code here
+  let value = initialValue; 
+  return{
+    add(num){
+      return new Promise((resolve)=>{
+        value += num;
+        resolve(this)
+      })
+    },
+    subtract(num){
+      return new Promise((resolve)=>{
+        value -= num;
+        resolve(this);
+      })
+    },
+    multiply(num){
+      return new Promise((resolve)=>{
+        value *= num;
+        resolve(this)
+      })
+    },
+    getResult(){
+      return new Promise((resolve)=>{
+        resolve(value); 
+      })
+    }
+  }
 }
 
 // Example Usage

@@ -3,6 +3,15 @@
 
 function validateForm(formData) {
  //Your code here
+ try{
+    for(let key in formData){
+        if(formData[key] == ""){
+            throw new Error("form")
+        }
+    }
+ }catch(error){
+    return error.message
+ }
 }
 
 // Function call

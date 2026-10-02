@@ -3,6 +3,16 @@
 
 function validateEmail(email) {
   //Your code here
+  try{
+    const regex =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
+    if(!regex.test(email)){
+      throw new Error("invalid email format");
+    }
+    return true;
+  }
+  catch(error){
+    return error.message;
+  }
 }
 
 // Function call

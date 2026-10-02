@@ -4,6 +4,8 @@
 function getPersonDetails(person) {
   
   // Your code here
+  const{name,gender = "unknown"} = person; 
+  return{name,gender};
 
 }
 

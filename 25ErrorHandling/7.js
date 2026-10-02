@@ -4,6 +4,16 @@
 
 function getCookieValue(cookieName) {
  //Your code
+ try{
+    const value = document.cookie.split(';').find(row => row.startsWith(cookieName+'=')); 
+    if(!value){
+        throw new Error("cookie not found"); 
+    }
+    return value.split("=")[1]; 
+ }
+ catch(error){
+    return error.message;
+ }
 }
 
 // Function call (Make sure the cookie "sessionId" is set in your browser)

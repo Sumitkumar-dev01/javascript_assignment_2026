@@ -1,0 +1,38 @@
+<!-- Question 3: Form Submit Event - Prevent Default
+Create a form that prevents submission if the user hasn't filled out a required field.Create a simple form with some fields like name and submit button and add validation for name field. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation Example</title>
+</head>
+<body>
+
+  <!-- Form with a text input for the name -->
+  <form id="myForm">
+    <input type="text" id="name" placeholder="Enter your name" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    // Get the form element by its ID
+    const form = document.getElementById('myForm');
+    form.addEventListener('submit',function(event){
+      const name = document.getElementById('name').value;
+      if(!name){
+        alert('please enter your name'); 
+        event.preventDefault(); 
+      }
+    })
+  //Your code here
+  </script>
+
+</body>
+</html>
+
+  

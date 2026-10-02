@@ -1,13 +1,25 @@
-// Write a function quizWithTimeout(question, answer, timeout) that takes a question, expected answer, and timeout. If the answer is provided within the timeout, resolve with "Correct!". Otherwise, reject with "Time s up!".
+//  Question 1: Fetch Data from API
+// Write a function fetchData that fetches data 
+// from the following URL and returns the JSON 
+// response.
 
 
-function quizWithTimeout(question, expectedAnswer, timeout) {
-  //Your code here
+
+
+async function fetchData() {
+  const url = "https://jsonplaceholder.typicode.com/posts";
+  try{
+    const response = await fetch(url); 
+    const data = await response.json(); 
+    return data;
+
+  }catch(error){
+    console.log("error while fetching data",error);
+  }
+//Your code here
 }
 
-// Example Usage
-quizWithTimeout("What is 2+2?", "4", 3000)
-  .then(console.log)
-  .catch(console.log);
+// Example usage
+fetchData().then(data => console.log(data));
 
   

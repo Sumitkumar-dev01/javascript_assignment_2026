@@ -1,0 +1,32 @@
+<!-- Question 4: Keydown Event - Detect Keyboard Input
+Create a program where use the addEventListener() method to listen for when a key is pressed (the keydown event). Once the key is pressed, we’ll capture the key value and use the console.log() method to display the key value in the browser's developer console. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Press Event Example</title>
+</head>
+<body>
+
+  <!-- Input field where the user can press a key -->
+  <input type="text" id="inputField" placeholder="Press a key">
+
+  <script>
+    // Get the input field element by its ID
+    const inputField = document.getElementById('inputField'); 
+
+    //Your code here
+    inputField.addEventListener('keydown',function(event){
+      console.log("key pressed:",event.key)
+    })
+  </script>
+
+</body>
+</html>
+
+
+  

@@ -17,9 +17,10 @@ let currentIndex = 0; // Initial index of the current image
 // Function to simulate showing the next image in the console
 function showNextImage() {
    //Your code here
+   console.clear(); 
+   console.log("displaying image: "+images[currentIndex]); 
+   currentIndex = (currentIndex+1)%images.length; 
 }
 
 // Initialize the slideshow and make it cycle every 3 seconds
 setInterval(showNextImage, 3000); // Change image every 3 seconds
-
-  

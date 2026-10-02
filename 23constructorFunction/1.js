@@ -3,6 +3,13 @@
 
 function ChatMessage(text, sender, timestamp) {
   //Your code here
+  this.text = text; 
+  this.sender = sender; 
+  this.timestamp = timestamp;
+  this.formatMessage = function(){
+     const formattedTime = this.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    return `${this.sender} [${formattedTime}]: ${this.text}`;
+  }
 }
 
 // Example Usage:

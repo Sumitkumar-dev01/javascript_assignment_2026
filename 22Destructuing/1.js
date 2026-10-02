@@ -1,10 +1,14 @@
-// Write a program to extract specific values from an array using destructuring. For a given array, extract the first and third elements into separate variables.
+// Write a program to extract specific values
+//  from an array using destructuring. 
+// For a given array, extract the first and 
+// third elements into separate variables.
 
 
 function getElements(arr) {
   
   // YOur code here
-
+   const [first,third ] = arr; 
+   return {first,third}
 }
 
 const arr = [10, 20, 30, 40, 50];

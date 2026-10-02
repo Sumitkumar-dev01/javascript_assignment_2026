@@ -1,0 +1,24 @@
+ <!-- Question 1: Add a New Item to a List
+Write a function addItemToList that adds a new list item with a specified text to an unordered list with a given ID. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  //Your code here
+  <script>
+    function addItemToList(listId, text) {
+      //Your code here
+      const ul = document.getElementById(listId); 
+      const li = document.createElement('li'); 
+      li.textContent = text;
+      ul.appendChild(li)
+    }
+  </script>
+</body>
+</html>
+
+
+  

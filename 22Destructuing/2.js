@@ -1,11 +1,8 @@
 // Write a program to swap the values of two variables using array destructuring. The program should not use a temporary variable for swapping.
 
-
-
 function swapValues(a, b) {
-     
     // Your code here
-
+    return [b,a]
 }
 
 let a = 5, b = 10;

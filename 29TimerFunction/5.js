@@ -4,6 +4,12 @@
 let seconds = 0;
 const stopwatch = setInterval(function() {
     //Your code here
+    console.log(seconds+"seconds");
+    seconds++;
+    if(seconds === 10){
+        clearInterval(stopwatch); 
+        console.log("stopwatch stopped at 10 seconds"); 
+    }
 }, 1000);
  // Increment every 1 second
 

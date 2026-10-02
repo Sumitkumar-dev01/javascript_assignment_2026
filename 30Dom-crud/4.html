@@ -1,0 +1,41 @@
+<!-- Question 4: Live Search with Dynamic Results
+Write a function liveSearch that dynamically filters and displays search results as the user types in an input field. The function should match the input against a list of items in an array and display only the matching items in real time, without requiring a page reload. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Search</title>
+  <style>
+    #results li {
+      list-style: none;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Live Search Example</h1>
+  <input type="text" id="searchBar" placeholder="Type to search..." />
+  <ul id="results"></ul>
+
+  <script>
+    // Sample list of items
+    const items = ["Apple", "Banana", "Cherry", "Date", "Elderberry", "Fig", "Grape"];
+
+    // Function to perform live search
+    function liveSearch(searchInputId, resultContainerId, items) {
+      //Your code here
+    }
+
+    // Initialize live search
+    liveSearch("searchBar", "results", items);
+  </script>
+</body>
+</html>
+
+
+  

@@ -17,7 +17,7 @@ class AuthenticationSystem {
   login(username, password) {
    //code here
 }
-
+}
 // Usage example
 
 const authSystem = new AuthenticationSystem();

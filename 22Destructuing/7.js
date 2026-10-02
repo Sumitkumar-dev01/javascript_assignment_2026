@@ -4,6 +4,7 @@
 function displayInfo(person) {
   
   // Your code here
+  console.log("name:"+person.name , "age:"+person.age)
 
 }
 

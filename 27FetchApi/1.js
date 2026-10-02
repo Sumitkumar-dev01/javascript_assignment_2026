@@ -4,6 +4,9 @@
 
 function convertToNumber(str) {
    // Your code here
+   let string  = str; 
+   return Number(string)
+
 }
 
 console.log(convertToNumber("123")); // 123

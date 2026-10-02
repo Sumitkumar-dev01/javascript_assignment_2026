@@ -3,7 +3,10 @@
 
 function getPersonDetails(person) {
   
-   // Your code here   
+   // Your code here 
+   const {name,age} = person;
+   return{name,age}  
+
 
 }
 

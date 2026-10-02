@@ -1,17 +1,22 @@
-// Write a calculator function that takes a number and returns an object with methods add, subtract, multiply, and getResult. Each method returns a promise to allow chaining.
+//  Question 2: Fetch with Query Parameters
+// Write a function fetchPostsByUser that fetches
+//  posts by a specific user ID from 
+// the following URL: API URL:https://jsonplaceholder.typicode.com/posts?userId=USER_ID
+
+// Example:
 
 
 
-function calculator(initialValue) {
-  //Your code here
+async function fetchPostsByUser(userId) {
+  const url = `https://jsonplaceholder.typicode.com/posts?userId=${userId}`; // Add query parameter
+//Your code here
+const response = await fetch(url); 
+const data = await response.json(); 
+return data;
 }
 
-// Example Usage
-calculator(5)
-  .add(10)
-  .subtract(3)
-  .multiply(2)
-  .getResult()
-  .then(console.log);
+// Example usage
+fetchPostsByUser(1).then(posts => console.log(posts));
+
 
   

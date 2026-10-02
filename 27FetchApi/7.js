@@ -1,12 +1,16 @@
-// Create a function streamMovie(movieName) that simulates streaming a movie. If the movie is unavailable, reject with "Movie not found". Otherwise, resolve with "Streaming [movieName]..."
+// Question 5: Fetch and Cache Data
+// Write a function fetchWithCache that fetches data from the API. If the data has already been fetched before, return the cached data instead of making another network request. API URL:https://jsonplaceholder.typicode.com/posts
 
 
-function streamMovie(movieName) {
+
+
+const cache = {}; // Object to store cached data
+
+async function fetchWithCache() {
   //Your code here
 }
 
-// Example Usage
-streamMovie("Inception")
-  .then(console.log)
-  .catch(console.log);
+// Example usage
+fetchWithCache().then(data => console.log(data));
+
   

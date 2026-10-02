@@ -1,0 +1,31 @@
+ <!-- Question 1: Creating a Button with a Click Event Listener in JavaScript
+Create a javascript program where create a button that says "Click me!".Give the button an ID so we can easily refer to it in our JavaScript code.Find the button on the page using its ID (alertButton).Add a "click event listener" to the button.Show an alert message when the button is clicked. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Click Example</title>
+</head>
+<body>
+
+  <!-- Button that says "Click me!" -->
+  <button id="alertButton">Click me!</button>
+
+  <script>
+    // Get the button element by its ID
+    const button = document.getElementById('alertButton');
+    button.addEventListener('click',function(){
+      alert("button clicked")
+    })
+    //Your code here
+    
+  </script>
+
+</body>
+</html>
+
+  

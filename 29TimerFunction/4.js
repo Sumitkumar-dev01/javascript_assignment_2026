@@ -3,5 +3,7 @@
 
 const randomNumberGenerator = setInterval(function() {
     //Your code here
+    const randomNumber = Math.floor(Math.random()*100)+1;
+    console.log("random number"+randomNumber)
 }, 1000); // Generate a random number every 1 second
   
